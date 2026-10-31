@@ -5881,7 +5881,7 @@ export default function RoverDashboard() {
                           {!collapsed && (
                             <div className="rv-card-body" style={{ padding:"6px 10px 10px",
                               display:"flex", flexDirection:"column", gap:"2px" }}>
-                              {filteredItems.map(({ item, idx, status, dateVal }) => {
+                              {filteredItems.map(({ item, idx, itemObj, status, dateVal }) => {
                                 // Use pre-computed dateVal from filteredItems (stable+legacy)
                                 const itemDate = dateVal || "";
                                 const expK = `${selectedSt.id}|${sec.name}|${idx}`;
